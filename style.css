@@ -1,0 +1,512 @@
+.container-custom-fluid .navbar-header img {
+    width: 100px;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.image {
+    position: relative;
+}
+
+.image .signin {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-size: 23px;
+    color: white;
+}
+.image .img-box {
+    height: 80px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+    background: linear-gradient(rgb(78, 78, 78), rgb(122, 122, 122));
+}
+
+.image img {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    left: 20%;
+    transform: translateX(-85%);
+}
+
+.img-box .quote {
+    position: absolute;
+    top: 40px;
+    left: 350px;
+    color: white;
+}
+
+@keyframes slide-up {
+    from { 
+        opacity: 0.25;
+        line-height: 500px;
+    }
+    to {   
+        opacity: 1;
+        line-height: 25px;
+    }
+}
+.slide-up {
+    animation: slide-up 2s;
+}
+
+.image .library {
+    position: absolute;
+    right: 40px;
+    top: 22px;
+}
+
+.image .library .btn-library {
+    background-color: rgb(255, 203, 91);
+    color: gray;
+    font-size: 16px;
+    border-radius: 35px;
+    padding: 5px 15px;
+}
+.image .library .btn-library:hover {
+    color: black;
+}
+/*------------------------------------------*/
+
+#mySidenav a {
+    position: fixed;
+    left: -220px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 330px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 0px 60px 0;
+    z-index: 100;
+  }
+  
+  #mySidenav a:hover {
+    left: 2px;
+  }
+  
+  #nav1 {
+    top: 140px;
+    background: linear-gradient(#FEAF5F, rgb(236, 150, 65));
+    color: white;
+  }
+  
+  #nav2 {
+    top: 230px;
+    background: linear-gradient(#FEAF5F, rgb(236, 150, 65));
+    color: white;
+  }
+  
+  #nav3 {
+    top: 320px;
+    background: linear-gradient(#FEAF5F, rgb(236, 150, 65));
+    color: white;
+  }
+  
+  #nav4 {
+    top: 410px;
+    background: linear-gradient(#FEAF5F, rgb(236, 150, 65));
+    color: white;
+  }
+
+  #nav5 {
+    top: 500px;
+    background: linear-gradient(#FEAF5F, rgb(236, 150, 65));
+    color: white;
+  }
+
+  .sidenav #nav1 .fa{
+    text-indent: 165px;
+    font-size: 30px;
+  }
+  .sidenav #nav2 .fa{
+    text-indent: 36px;
+    font-size: 30px;
+  }
+  .sidenav #nav3 .fa{
+    text-indent: 52px;
+    font-size: 30px;
+  }
+  .sidenav #nav4 .fa{
+    text-indent: 147px;
+    font-size: 30px;
+  }
+  .sidenav #nav5 .fa{
+    text-indent: 96px;
+    font-size: 30px;
+  }
+
+/*------------------------------------------*/
+
+.boxes {
+    border: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(228, 228, 228), rgb(235, 233, 233));
+    box-shadow: 0px 5px 15px gray;
+}
+
+.boxes .box {
+    height: 60px;
+    width: 100px;
+    /* border: 1px solid grey; */
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 8px;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.boxes .box:hover {
+    transform: scale(1.5, 1.5);
+    transition: 0.7s;
+}
+
+.boxes .box p {
+    display: none;
+}
+.boxes .box:hover p {
+    display: block;
+    font-size: 10px;
+}
+
+.boxes .box .fa {   
+    font-size: 30px;
+}
+.boxes .box:hover .fa {
+    display: none;
+}
+
+.box1 .fa {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.boxes .box1 {
+    background: linear-gradient(to left, #9950FA, #6900F9);
+}
+.boxes .box2 {
+    background: linear-gradient(to left, #FE6AB3, #8A59D5);
+}
+.boxes .box3 {
+    background: linear-gradient(to right, #F04890, #F57679); 
+}
+.boxes .box4 {
+    background: linear-gradient(to left, #F25D87, #FDB15E);
+}
+.boxes .box5 {
+    background: linear-gradient(to left, #7260E7, #00B0F1);
+}
+.boxes .box6 {
+    background: linear-gradient(to right, #3DE7DE, #00B0F1); 
+}
+.boxes .box7 {
+    background: linear-gradient(to right, #F25D87, #FDB15E);
+}
+.boxes .box8 {
+    background: linear-gradient(to left, #04AAE7, #38FDD0);
+}
+.boxes .box9 {
+    background: linear-gradient(to right, #56E6A6, #57B6CC);
+}
+
+/*-----------------------------------*/
+
+.register-library, .search-bars {
+    margin: 35px 0;
+    border: 1px solid rgb(199, 199, 199);
+    height: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 5px 15px gray;
+}
+
+@media (max-width: 1202px) {
+    .register-library, .search-bars {
+        height: 70px;
+    }
+}
+
+.search-bars {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(231, 231, 231);
+    background: linear-gradient(to left, rgb(247, 247, 247), rgb(236, 236, 236));
+}
+
+.search-bars .all {
+    padding: 4px;
+    /* border: 1px solid rgb(190, 190, 190); */
+    background-color: white;
+    border-radius: 70px;
+    /* border-radius: 3px; */
+    width: 60px;
+    margin: 0 5px;
+}
+.search-bars .all .fa-globe {
+    font-size: 25px;
+    padding: 2px;
+    animation-name: globeroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes globeroll {
+    0%   { 
+        transform: rotate(90deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+  }
+
+  .search-bars .bar {
+      width: 60%;   
+      position: relative;
+  }
+
+  .search-bars .bar input {
+      width: 100%;
+      height: 40px;
+      /* border: 1px solid rgb(194, 194, 194); */
+      border-radius: 70px;
+      border: none;
+      position: absolute;
+      top: -20px;
+  }
+  ::-webkit-input-placeholder { 
+    text-indent: 10px;
+  }
+  .search-bars .bar .fa {
+      position: absolute;
+      font-size: 20px;
+      right: 20px;
+      top: -10px;
+  }
+
+.search-bars .notifications .fa {
+    font-size: 30px;
+}
+
+.search-bars .notifications .not-1, .search-bars .notifications .not-2, .search-bars .notifications .not-3 {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/*effects*/
+.not-1:hover .fa, .not-3 .fa:hover {
+    transform: rotate(360deg);
+    transition: 0.7s;
+}
+.not-2 .fa:hover {
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+/*-----------------------------------*/
+
+.panels {
+    padding: 25px;
+    height: 317px;
+    overflow-x: auto;
+    border-radius: 3px;
+    box-shadow: 0px 5px 15px gray;
+    /* background: linear-gradient(to right,rgb(182, 152, 250), #FDBABC);  */
+    background: linear-gradient(rgb(180, 180, 180), gray);     
+}
+
+.panels .panel {
+    background: linear-gradient(to right,rgb(248, 248, 248), rgb(248, 246, 246));
+}
+
+.panels .panel h4 {
+    margin: 10px 20px;
+}
+
+.panel-container {
+    background-color: white;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.panel-container i {
+    color: rgb(255, 187, 0);
+}
+.panel-container p:hover i {
+    transform: scale(2,2) translate(10px, 0px);
+    transition: 0.4s;
+}
+
+.panel .panel-details p {
+    margin: 15px;
+    max-width: 150px;
+    padding: 5px 20px;
+    color: gray;
+    background-color: white;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.panel .panel-details .btn-download {
+    color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 5px 30px;  
+    background: linear-gradient(rgb(238, 161, 97), salmon);
+    max-width: 140px;
+}
+.panel .panel-details .btn-download:hover {
+    transition: 0.5s;
+    color: sandybrown;
+    background: white;
+    border: 1px solid salmon;
+}
+
+@media(max-width: 1252px) and (min-width: 991px) {
+    .panel .panel-details .btn {
+        width: 100px;
+        padding: 5px 10px; 
+    }
+}
+
+/*-----------------------------------*/
+
+.panels-forms {
+    border-radius: 4px;
+    padding: 25px;
+    height: 410px;
+    margin: 35px 0px;
+    position: relative;
+    box-shadow: 0px 5px 15px gray;
+    background: linear-gradient(rgb(180, 180, 180), gray);     
+}
+
+.panels-forms .panel {
+    background: linear-gradient(to right,rgb(248, 248, 248), rgb(248, 246, 246));    
+}
+
+.panels-forms .panel h4 {
+    display: inline-block;
+    padding: 16px;
+}
+
+.panels-forms .panel p {
+    display: inline-block;  
+    padding: 5px 20px;  
+    border: 1px solid rgb(184, 184, 184);
+    position: absolute;
+    top: -20%;
+    transform: translateY(58%);
+    border-radius: 15px;
+}
+.panels-forms .panel .btn .fa {
+    padding-right: 5px;
+} 
+.panels-forms .panel .btn-form-download {
+    /* border: 1px solid gray; */
+    background: linear-gradient(rgb(238, 161, 97), salmon);
+    color: white;
+    display: inline-block;    
+    position: absolute;
+    top: -20%;
+    transform: translateY(50%);
+}
+
+.panels-forms .panel .btn-form-download:hover {
+    transition: 0.5s;
+    color: sandybrown;
+    background: white;
+    border: 1px solid salmon;
+}
+
+.panels-forms .panel-btns {
+    margin: 0;
+}
+
+/*-----------------------------------*/
+
+.panels-rules {
+    border: 1px solid gray;
+    padding: 25px;
+    height: 418px;
+    margin: 25px 0px;
+    position: relative;
+    overflow-y: auto;
+    background: linear-gradient(rgb(180, 180, 180), gray);     
+    box-shadow: 0px 5px 15px gray;
+}
+
+.panels-rules .panel {
+    background: linear-gradient(to right,rgb(248, 248, 248), rgb(248, 246, 246));    
+}
+
+.panels-rules .panel h4 {
+    display: inline-block;
+    padding: 16px;
+}
+
+.panels-rules .panel p {
+    display: inline-block;  
+    padding: 5px 20px;  
+    border: 1px solid gray;
+    position: absolute;
+    top: -20%;
+    transform: translateY(58%);
+    border-radius: 15px;
+}
+.panels-rules .panel .btn .fa {
+    padding-right: 5px;
+} 
+.panels-rules .panel .btn-rules-download {
+    background: linear-gradient(rgb(238, 161, 97), salmon);
+    color: white;
+    display: inline-block;    
+    position: absolute;
+    top: -20%;
+    transform: translateY(50%);
+}
+
+.panels-forms .panel .btn-rules-download:hover {
+    transition: 0.5s;
+    color: sandybrown;
+    background: white;
+    border: 1px solid salmon;
+}
+
+.panels-forms .panel-btns {
+    margin: 0;
+}
