@@ -535,18 +535,18 @@ search.addEventListener('keyup',function(e){
     Array.from(listBook);
     
 
-    // Array.from(listBook).forEach(function(Book){
-    //     const listVal = Book.lastElementChild.textContent;
-    //     console.log(listVal);
-    //     if(listVal.toLowerCase().indexOf(val)!= -1)
-    //     {
-    //         funBook.style.display = "block";
-    //     }
-    //     else
-    //     {
-    //         funBook.style.display = "none";
-    //     }
-    // });
+    Array.from(listBook).forEach(function(Book){
+        const listVal = Book.lastElementChild.textContent;
+        console.log(listVal);
+        if(listVal.toLowerCase().indexOf(val)!= -1)
+        {
+            funBook.style.display = "block";
+        }
+        else
+        {
+            funBook.style.display = "none";
+        }
+    });
 });
 
 
